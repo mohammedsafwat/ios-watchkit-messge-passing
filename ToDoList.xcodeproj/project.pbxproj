@@ -1,878 +1,1918 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3B60D5861BB0141A00614805 /* ToDoListWatchKitTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60D5851BB0141A00614805 /* ToDoListWatchKitTableRow.m */; };
-		3B60D5891BB02F7400614805 /* ToDoListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60D5881BB02F7400614805 /* ToDoListData.m */; };
-		3BED7FB51BAE6AC900C03E1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED7FB41BAE6AC900C03E1E /* main.m */; };
-		3BED7FB81BAE6AC900C03E1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED7FB71BAE6AC900C03E1E /* AppDelegate.m */; };
-		3BED7FBE1BAE6AC900C03E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FBC1BAE6AC900C03E1E /* Main.storyboard */; };
-		3BED7FC01BAE6AC900C03E1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FBF1BAE6AC900C03E1E /* Images.xcassets */; };
-		3BED7FC31BAE6AC900C03E1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FC11BAE6AC900C03E1E /* LaunchScreen.xib */; };
-		3BED7FCF1BAE6AC900C03E1E /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED7FCE1BAE6AC900C03E1E /* ToDoListTests.m */; };
-		3BED7FE21BAE6AD700C03E1E /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED7FE11BAE6AD700C03E1E /* InterfaceController.m */; };
-		3BED7FE41BAE6AD700C03E1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FE31BAE6AD700C03E1E /* Images.xcassets */; };
-		3BED7FE81BAE6ADC00C03E1E /* ToDoList WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FE71BAE6ADC00C03E1E /* ToDoList WatchKit App.app */; };
-		3BED7FF01BAE6ADC00C03E1E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FEE1BAE6ADC00C03E1E /* Interface.storyboard */; };
-		3BED7FF21BAE6ADC00C03E1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BED7FF11BAE6ADC00C03E1E /* Images.xcassets */; };
-		3BED7FF51BAE6ADC00C03E1E /* ToDoList WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3BED7FDC1BAE6AD500C03E1E /* ToDoList WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3BED7FFF1BAE6F8E00C03E1E /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED7FFE1BAE6F8E00C03E1E /* ToDoListTableViewController.m */; };
-		3BED80041BAEA66500C03E1E /* ToDoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED80031BAEA66500C03E1E /* ToDoListTableViewCell.m */; };
-		495E82B1BD0EDCF12327C782 /* libPods-ToDoList WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE29DAE96F085D5D3D5ED72 /* libPods-ToDoList WatchKit Extension.a */; };
-		96E16CBA0D5B6CABE22E6888 /* libPods-ToDoList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 443C13B511E11D943C1971AA /* libPods-ToDoList.a */; };
-		AF7CA462EE8DC5AD749303D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E88E805F6C415D063555D /* libPods.a */; };
-		BD48CEE1C7AFE335DEC713FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E88E805F6C415D063555D /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3BED7FC91BAE6AC900C03E1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BED7FA71BAE6AC900C03E1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BED7FAE1BAE6AC900C03E1E;
-			remoteInfo = ToDoList;
-		};
-		3BED7FE91BAE6ADC00C03E1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BED7FA71BAE6AC900C03E1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BED7FE61BAE6ADC00C03E1E;
-			remoteInfo = "ToDoList WatchKit App";
-		};
-		3BED7FF31BAE6ADC00C03E1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BED7FA71BAE6AC900C03E1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BED7FDB1BAE6AD500C03E1E;
-			remoteInfo = "ToDoList WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3BED7FFC1BAE6ADD00C03E1E /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				3BED7FF51BAE6ADC00C03E1E /* ToDoList WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		19D0CD74E57A7D8D0EE639C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		3B60D5841BB0141A00614805 /* ToDoListWatchKitTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListWatchKitTableRow.h; sourceTree = "<group>"; };
-		3B60D5851BB0141A00614805 /* ToDoListWatchKitTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListWatchKitTableRow.m; sourceTree = "<group>"; };
-		3B60D5871BB02F7400614805 /* ToDoListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListData.h; sourceTree = "<group>"; };
-		3B60D5881BB02F7400614805 /* ToDoListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListData.m; sourceTree = "<group>"; };
-		3BA2BBF91BB19CB600E340B5 /* ToDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ToDoList.entitlements; sourceTree = "<group>"; };
-		3BA2BBFA1BB19D4A00E340B5 /* ToDoList WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ToDoList WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		3BED7FAF1BAE6AC900C03E1E /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BED7FB31BAE6AC900C03E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BED7FB41BAE6AC900C03E1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3BED7FB61BAE6AC900C03E1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3BED7FB71BAE6AC900C03E1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3BED7FBD1BAE6AC900C03E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3BED7FBF1BAE6AC900C03E1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3BED7FC21BAE6AC900C03E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3BED7FC81BAE6AC900C03E1E /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BED7FCD1BAE6AC900C03E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BED7FCE1BAE6AC900C03E1E /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
-		3BED7FDC1BAE6AD500C03E1E /* ToDoList WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ToDoList WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BED7FDF1BAE6AD600C03E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BED7FE01BAE6AD600C03E1E /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		3BED7FE11BAE6AD700C03E1E /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		3BED7FE31BAE6AD700C03E1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3BED7FE71BAE6ADC00C03E1E /* ToDoList WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDoList WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BED7FED1BAE6ADC00C03E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BED7FEF1BAE6ADC00C03E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		3BED7FF11BAE6ADC00C03E1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3BED7FFD1BAE6F8E00C03E1E /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
-		3BED7FFE1BAE6F8E00C03E1E /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
-		3BED80021BAEA66500C03E1E /* ToDoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewCell.h; sourceTree = "<group>"; };
-		3BED80031BAEA66500C03E1E /* ToDoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewCell.m; sourceTree = "<group>"; };
-		443C13B511E11D943C1971AA /* libPods-ToDoList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToDoList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		886EFD753F18083ED063B542 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		BA7E88E805F6C415D063555D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE29DAE96F085D5D3D5ED72 /* libPods-ToDoList WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToDoList WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1EE83999705068222389289 /* Pods-ToDoList WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		EDA2C18127C163DD7802E12D /* Pods-ToDoList WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3BED7FAC1BAE6AC900C03E1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF7CA462EE8DC5AD749303D5 /* libPods.a in Frameworks */,
-				96E16CBA0D5B6CABE22E6888 /* libPods-ToDoList.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FC51BAE6AC900C03E1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FD91BAE6AD500C03E1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				495E82B1BD0EDCF12327C782 /* libPods-ToDoList WatchKit Extension.a in Frameworks */,
-				BD48CEE1C7AFE335DEC713FE /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		07CC0455CD7E449E539E14E2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BA7E88E805F6C415D063555D /* libPods.a */,
-				443C13B511E11D943C1971AA /* libPods-ToDoList.a */,
-				BBE29DAE96F085D5D3D5ED72 /* libPods-ToDoList WatchKit Extension.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2FB01128446172758B6F0E05 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				19D0CD74E57A7D8D0EE639C7 /* Pods.debug.xcconfig */,
-				886EFD753F18083ED063B542 /* Pods.release.xcconfig */,
-				EDA2C18127C163DD7802E12D /* Pods-ToDoList WatchKit Extension.debug.xcconfig */,
-				E1EE83999705068222389289 /* Pods-ToDoList WatchKit Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3B60D5821BB0132700614805 /* ControllerClasses */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FE01BAE6AD600C03E1E /* InterfaceController.h */,
-				3BED7FE11BAE6AD700C03E1E /* InterfaceController.m */,
-			);
-			name = ControllerClasses;
-			sourceTree = "<group>";
-		};
-		3B60D5831BB0133400614805 /* ModelClasses */ = {
-			isa = PBXGroup;
-			children = (
-				3B60D5841BB0141A00614805 /* ToDoListWatchKitTableRow.h */,
-				3B60D5851BB0141A00614805 /* ToDoListWatchKitTableRow.m */,
-			);
-			name = ModelClasses;
-			sourceTree = "<group>";
-		};
-		3BED7FA61BAE6AC900C03E1E = {
-			isa = PBXGroup;
-			children = (
-				3BED7FB11BAE6AC900C03E1E /* ToDoList */,
-				3BED7FCB1BAE6AC900C03E1E /* ToDoListTests */,
-				3BED7FDD1BAE6AD500C03E1E /* ToDoList WatchKit Extension */,
-				3BED7FEB1BAE6ADC00C03E1E /* ToDoList WatchKit App */,
-				3BED7FB01BAE6AC900C03E1E /* Products */,
-				2FB01128446172758B6F0E05 /* Pods */,
-				07CC0455CD7E449E539E14E2 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		3BED7FB01BAE6AC900C03E1E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FAF1BAE6AC900C03E1E /* ToDoList.app */,
-				3BED7FC81BAE6AC900C03E1E /* ToDoListTests.xctest */,
-				3BED7FDC1BAE6AD500C03E1E /* ToDoList WatchKit Extension.appex */,
-				3BED7FE71BAE6ADC00C03E1E /* ToDoList WatchKit App.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3BED7FB11BAE6AC900C03E1E /* ToDoList */ = {
-			isa = PBXGroup;
-			children = (
-				3BA2BBF91BB19CB600E340B5 /* ToDoList.entitlements */,
-				3BED80011BAEA60C00C03E1E /* ModelClasses */,
-				3BED80001BAEA5E700C03E1E /* ControllerClasses */,
-				3BED7FB61BAE6AC900C03E1E /* AppDelegate.h */,
-				3BED7FB71BAE6AC900C03E1E /* AppDelegate.m */,
-				3BED7FBC1BAE6AC900C03E1E /* Main.storyboard */,
-				3BED7FBF1BAE6AC900C03E1E /* Images.xcassets */,
-				3BED7FC11BAE6AC900C03E1E /* LaunchScreen.xib */,
-				3BED7FB21BAE6AC900C03E1E /* Supporting Files */,
-			);
-			path = ToDoList;
-			sourceTree = "<group>";
-		};
-		3BED7FB21BAE6AC900C03E1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FB31BAE6AC900C03E1E /* Info.plist */,
-				3BED7FB41BAE6AC900C03E1E /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BED7FCB1BAE6AC900C03E1E /* ToDoListTests */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FCE1BAE6AC900C03E1E /* ToDoListTests.m */,
-				3BED7FCC1BAE6AC900C03E1E /* Supporting Files */,
-			);
-			path = ToDoListTests;
-			sourceTree = "<group>";
-		};
-		3BED7FCC1BAE6AC900C03E1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FCD1BAE6AC900C03E1E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BED7FDD1BAE6AD500C03E1E /* ToDoList WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				3BA2BBFA1BB19D4A00E340B5 /* ToDoList WatchKit Extension.entitlements */,
-				3B60D5831BB0133400614805 /* ModelClasses */,
-				3B60D5821BB0132700614805 /* ControllerClasses */,
-				3BED7FE31BAE6AD700C03E1E /* Images.xcassets */,
-				3BED7FDE1BAE6AD600C03E1E /* Supporting Files */,
-			);
-			path = "ToDoList WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		3BED7FDE1BAE6AD600C03E1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FDF1BAE6AD600C03E1E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BED7FEB1BAE6ADC00C03E1E /* ToDoList WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FEE1BAE6ADC00C03E1E /* Interface.storyboard */,
-				3BED7FF11BAE6ADC00C03E1E /* Images.xcassets */,
-				3BED7FEC1BAE6ADC00C03E1E /* Supporting Files */,
-			);
-			path = "ToDoList WatchKit App";
-			sourceTree = "<group>";
-		};
-		3BED7FEC1BAE6ADC00C03E1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FED1BAE6ADC00C03E1E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BED80001BAEA5E700C03E1E /* ControllerClasses */ = {
-			isa = PBXGroup;
-			children = (
-				3BED7FFD1BAE6F8E00C03E1E /* ToDoListTableViewController.h */,
-				3BED7FFE1BAE6F8E00C03E1E /* ToDoListTableViewController.m */,
-			);
-			name = ControllerClasses;
-			sourceTree = "<group>";
-		};
-		3BED80011BAEA60C00C03E1E /* ModelClasses */ = {
-			isa = PBXGroup;
-			children = (
-				3BED80021BAEA66500C03E1E /* ToDoListTableViewCell.h */,
-				3BED80031BAEA66500C03E1E /* ToDoListTableViewCell.m */,
-				3B60D5871BB02F7400614805 /* ToDoListData.h */,
-				3B60D5881BB02F7400614805 /* ToDoListData.m */,
-			);
-			name = ModelClasses;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		3BED7FAE1BAE6AC900C03E1E /* ToDoList */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BED7FD21BAE6AC900C03E1E /* Build configuration list for PBXNativeTarget "ToDoList" */;
-			buildPhases = (
-				7F570432637A66035D1CD684 /* Check Pods Manifest.lock */,
-				3BED7FAB1BAE6AC900C03E1E /* Sources */,
-				3BED7FAC1BAE6AC900C03E1E /* Frameworks */,
-				3BED7FAD1BAE6AC900C03E1E /* Resources */,
-				3BED7FFC1BAE6ADD00C03E1E /* Embed App Extensions */,
-				536F1D54B88B31A32CBB7B3F /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BED7FF41BAE6ADC00C03E1E /* PBXTargetDependency */,
-			);
-			name = ToDoList;
-			productName = ToDoList;
-			productReference = 3BED7FAF1BAE6AC900C03E1E /* ToDoList.app */;
-			productType = "com.apple.product-type.application";
-		};
-		3BED7FC71BAE6AC900C03E1E /* ToDoListTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BED7FD51BAE6AC900C03E1E /* Build configuration list for PBXNativeTarget "ToDoListTests" */;
-			buildPhases = (
-				3BED7FC41BAE6AC900C03E1E /* Sources */,
-				3BED7FC51BAE6AC900C03E1E /* Frameworks */,
-				3BED7FC61BAE6AC900C03E1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BED7FCA1BAE6AC900C03E1E /* PBXTargetDependency */,
-			);
-			name = ToDoListTests;
-			productName = ToDoListTests;
-			productReference = 3BED7FC81BAE6AC900C03E1E /* ToDoListTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3BED7FDB1BAE6AD500C03E1E /* ToDoList WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BED7FF91BAE6ADD00C03E1E /* Build configuration list for PBXNativeTarget "ToDoList WatchKit Extension" */;
-			buildPhases = (
-				7C460959A5960DEE58EA9673 /* Check Pods Manifest.lock */,
-				3BED7FD81BAE6AD500C03E1E /* Sources */,
-				3BED7FD91BAE6AD500C03E1E /* Frameworks */,
-				3BED7FDA1BAE6AD500C03E1E /* Resources */,
-				12D98249AFD6B375CFC6FD58 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BED7FEA1BAE6ADC00C03E1E /* PBXTargetDependency */,
-			);
-			name = "ToDoList WatchKit Extension";
-			productName = "ToDoList WatchKit Extension";
-			productReference = 3BED7FDC1BAE6AD500C03E1E /* ToDoList WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		3BED7FE61BAE6ADC00C03E1E /* ToDoList WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BED7FF61BAE6ADD00C03E1E /* Build configuration list for PBXNativeTarget "ToDoList WatchKit App" */;
-			buildPhases = (
-				3BED7FE51BAE6ADC00C03E1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ToDoList WatchKit App";
-			productName = "ToDoList WatchKit App";
-			productReference = 3BED7FE71BAE6ADC00C03E1E /* ToDoList WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3BED7FA71BAE6AC900C03E1E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = safwat;
-				TargetAttributes = {
-					3BED7FAE1BAE6AC900C03E1E = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 5M8KATGLDP;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					3BED7FC71BAE6AC900C03E1E = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 3BED7FAE1BAE6AC900C03E1E;
-					};
-					3BED7FDB1BAE6AD500C03E1E = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 5M8KATGLDP;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					3BED7FE61BAE6ADC00C03E1E = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-				};
-			};
-			buildConfigurationList = 3BED7FAA1BAE6AC900C03E1E /* Build configuration list for PBXProject "ToDoList" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 3BED7FA61BAE6AC900C03E1E;
-			productRefGroup = 3BED7FB01BAE6AC900C03E1E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3BED7FAE1BAE6AC900C03E1E /* ToDoList */,
-				3BED7FC71BAE6AC900C03E1E /* ToDoListTests */,
-				3BED7FDB1BAE6AD500C03E1E /* ToDoList WatchKit Extension */,
-				3BED7FE61BAE6ADC00C03E1E /* ToDoList WatchKit App */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3BED7FAD1BAE6AC900C03E1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BED7FBE1BAE6AC900C03E1E /* Main.storyboard in Resources */,
-				3BED7FC31BAE6AC900C03E1E /* LaunchScreen.xib in Resources */,
-				3BED7FC01BAE6AC900C03E1E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FC61BAE6AC900C03E1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FDA1BAE6AD500C03E1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BED7FE81BAE6ADC00C03E1E /* ToDoList WatchKit App.app in Resources */,
-				3BED7FE41BAE6AD700C03E1E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FE51BAE6ADC00C03E1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BED7FF01BAE6ADC00C03E1E /* Interface.storyboard in Resources */,
-				3BED7FF21BAE6ADC00C03E1E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		12D98249AFD6B375CFC6FD58 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		536F1D54B88B31A32CBB7B3F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C460959A5960DEE58EA9673 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7F570432637A66035D1CD684 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3BED7FAB1BAE6AC900C03E1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BED7FFF1BAE6F8E00C03E1E /* ToDoListTableViewController.m in Sources */,
-				3B60D5891BB02F7400614805 /* ToDoListData.m in Sources */,
-				3BED7FB81BAE6AC900C03E1E /* AppDelegate.m in Sources */,
-				3BED7FB51BAE6AC900C03E1E /* main.m in Sources */,
-				3BED80041BAEA66500C03E1E /* ToDoListTableViewCell.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FC41BAE6AC900C03E1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BED7FCF1BAE6AC900C03E1E /* ToDoListTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BED7FD81BAE6AD500C03E1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B60D5861BB0141A00614805 /* ToDoListWatchKitTableRow.m in Sources */,
-				3BED7FE21BAE6AD700C03E1E /* InterfaceController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3BED7FCA1BAE6AC900C03E1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BED7FAE1BAE6AC900C03E1E /* ToDoList */;
-			targetProxy = 3BED7FC91BAE6AC900C03E1E /* PBXContainerItemProxy */;
-		};
-		3BED7FEA1BAE6ADC00C03E1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BED7FE61BAE6ADC00C03E1E /* ToDoList WatchKit App */;
-			targetProxy = 3BED7FE91BAE6ADC00C03E1E /* PBXContainerItemProxy */;
-		};
-		3BED7FF41BAE6ADC00C03E1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BED7FDB1BAE6AD500C03E1E /* ToDoList WatchKit Extension */;
-			targetProxy = 3BED7FF31BAE6ADC00C03E1E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3BED7FBC1BAE6AC900C03E1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BED7FBD1BAE6AC900C03E1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3BED7FC11BAE6AC900C03E1E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BED7FC21BAE6AC900C03E1E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		3BED7FEE1BAE6ADC00C03E1E /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BED7FEF1BAE6ADC00C03E1E /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		3BED7FD01BAE6AC900C03E1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3BED7FD11BAE6AC900C03E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3BED7FD31BAE6AC900C03E1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDA2C18127C163DD7802E12D /* Pods-ToDoList WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = ToDoList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Debug;
-		};
-		3BED7FD41BAE6AC900C03E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1EE83999705068222389289 /* Pods-ToDoList WatchKit Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ToDoList/ToDoList.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = ToDoList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		3BED7FD61BAE6AC900C03E1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ToDoListTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList";
-			};
-			name = Debug;
-		};
-		3BED7FD71BAE6AC900C03E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ToDoListTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList";
-			};
-			name = Release;
-		};
-		3BED7FF71BAE6ADD00C03E1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = ToDoList_WatchKit_Extension;
-				INFOPLIST_FILE = "ToDoList WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		3BED7FF81BAE6ADD00C03E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = ToDoList_WatchKit_Extension;
-				INFOPLIST_FILE = "ToDoList WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		3BED7FFA1BAE6ADD00C03E1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDA2C18127C163DD7802E12D /* Pods-ToDoList WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "ToDoList WatchKit Extension/ToDoList WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ToDoList WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3BED7FFB1BAE6ADD00C03E1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1EE83999705068222389289 /* Pods-ToDoList WatchKit Extension.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "ToDoList WatchKit Extension/ToDoList WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "ToDoList WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3BED7FAA1BAE6AC900C03E1E /* Build configuration list for PBXProject "ToDoList" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BED7FD01BAE6AC900C03E1E /* Debug */,
-				3BED7FD11BAE6AC900C03E1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BED7FD21BAE6AC900C03E1E /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BED7FD31BAE6AC900C03E1E /* Debug */,
-				3BED7FD41BAE6AC900C03E1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BED7FD51BAE6AC900C03E1E /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BED7FD61BAE6AC900C03E1E /* Debug */,
-				3BED7FD71BAE6AC900C03E1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BED7FF61BAE6ADD00C03E1E /* Build configuration list for PBXNativeTarget "ToDoList WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BED7FF71BAE6ADD00C03E1E /* Debug */,
-				3BED7FF81BAE6ADD00C03E1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BED7FF91BAE6ADD00C03E1E /* Build configuration list for PBXNativeTarget "ToDoList WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BED7FFA1BAE6ADD00C03E1E /* Debug */,
-				3BED7FFB1BAE6ADD00C03E1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3BED7FA71BAE6AC900C03E1E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>07CC0455CD7E449E539E14E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA7E88E805F6C415D063555D</string>
+				<string>443C13B511E11D943C1971AA</string>
+				<string>BBE29DAE96F085D5D3D5ED72</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>12D98249AFD6B375CFC6FD58</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>19D0CD74E57A7D8D0EE639C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F99FBEAA9548EED38E4A250</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ToDoList.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2FB01128446172758B6F0E05</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>19D0CD74E57A7D8D0EE639C7</string>
+				<string>886EFD753F18083ED063B542</string>
+				<string>EDA2C18127C163DD7802E12D</string>
+				<string>E1EE83999705068222389289</string>
+				<string>1F99FBEAA9548EED38E4A250</string>
+				<string>77165DF35ABD8C69381E39FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5821BB0132700614805</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FE01BAE6AD600C03E1E</string>
+				<string>3BED7FE11BAE6AD700C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ControllerClasses</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5831BB0133400614805</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B60D5841BB0141A00614805</string>
+				<string>3B60D5851BB0141A00614805</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ModelClasses</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5841BB0141A00614805</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToDoListWatchKitTableRow.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5851BB0141A00614805</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToDoListWatchKitTableRow.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5861BB0141A00614805</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B60D5851BB0141A00614805</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B60D5871BB02F7400614805</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToDoListData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5881BB02F7400614805</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToDoListData.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60D5891BB02F7400614805</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B60D5881BB02F7400614805</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BA2BBF91BB19CB600E340B5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>ToDoList.entitlements</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BA2BBFA1BB19D4A00E340B5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>ToDoList WatchKit Extension.entitlements</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FA61BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FB11BAE6AC900C03E1E</string>
+				<string>3BED7FCB1BAE6AC900C03E1E</string>
+				<string>3BED7FDD1BAE6AD500C03E1E</string>
+				<string>3BED7FEB1BAE6ADC00C03E1E</string>
+				<string>3BED7FB01BAE6AC900C03E1E</string>
+				<string>2FB01128446172758B6F0E05</string>
+				<string>07CC0455CD7E449E539E14E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FA71BAE6AC900C03E1E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0630</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>safwat</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>3BED7FAE1BAE6AC900C03E1E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+						<key>DevelopmentTeam</key>
+						<string>5M8KATGLDP</string>
+						<key>SystemCapabilities</key>
+						<dict>
+							<key>com.apple.ApplicationGroups.iOS</key>
+							<dict>
+								<key>enabled</key>
+								<string>1</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>3BED7FC71BAE6AC900C03E1E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+						<key>TestTargetID</key>
+						<string>3BED7FAE1BAE6AC900C03E1E</string>
+					</dict>
+					<key>3BED7FDB1BAE6AD500C03E1E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+						<key>DevelopmentTeam</key>
+						<string>5M8KATGLDP</string>
+						<key>SystemCapabilities</key>
+						<dict>
+							<key>com.apple.ApplicationGroups.iOS</key>
+							<dict>
+								<key>enabled</key>
+								<string>1</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>3BED7FE61BAE6ADC00C03E1E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.3.2</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>3BED7FAA1BAE6AC900C03E1E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>3BED7FA61BAE6AC900C03E1E</string>
+			<key>productRefGroup</key>
+			<string>3BED7FB01BAE6AC900C03E1E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3BED7FAE1BAE6AC900C03E1E</string>
+				<string>3BED7FC71BAE6AC900C03E1E</string>
+				<string>3BED7FDB1BAE6AD500C03E1E</string>
+				<string>3BED7FE61BAE6ADC00C03E1E</string>
+			</array>
+		</dict>
+		<key>3BED7FAA1BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3BED7FD01BAE6AC900C03E1E</string>
+				<string>3BED7FD11BAE6AC900C03E1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3BED7FAB1BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FFF1BAE6F8E00C03E1E</string>
+				<string>3B60D5891BB02F7400614805</string>
+				<string>3BED7FB81BAE6AC900C03E1E</string>
+				<string>3BED7FB51BAE6AC900C03E1E</string>
+				<string>3BED80041BAEA66500C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FAC1BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AF7CA462EE8DC5AD749303D5</string>
+				<string>96E16CBA0D5B6CABE22E6888</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FAD1BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FBE1BAE6AC900C03E1E</string>
+				<string>3BED7FC31BAE6AC900C03E1E</string>
+				<string>3BED7FC01BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FAE1BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3BED7FD21BAE6AC900C03E1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7F570432637A66035D1CD684</string>
+				<string>3BED7FAB1BAE6AC900C03E1E</string>
+				<string>3BED7FAC1BAE6AC900C03E1E</string>
+				<string>3BED7FAD1BAE6AC900C03E1E</string>
+				<string>3BED7FFC1BAE6ADD00C03E1E</string>
+				<string>536F1D54B88B31A32CBB7B3F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3BED7FF41BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ToDoList</string>
+			<key>productName</key>
+			<string>ToDoList</string>
+			<key>productReference</key>
+			<string>3BED7FAF1BAE6AC900C03E1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>3BED7FAF1BAE6AC900C03E1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ToDoList.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3BED7FB01BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FAF1BAE6AC900C03E1E</string>
+				<string>3BED7FC81BAE6AC900C03E1E</string>
+				<string>3BED7FDC1BAE6AD500C03E1E</string>
+				<string>3BED7FE71BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB11BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BA2BBF91BB19CB600E340B5</string>
+				<string>3BED80011BAEA60C00C03E1E</string>
+				<string>3BED80001BAEA5E700C03E1E</string>
+				<string>3BED7FB61BAE6AC900C03E1E</string>
+				<string>3BED7FB71BAE6AC900C03E1E</string>
+				<string>3BED7FBC1BAE6AC900C03E1E</string>
+				<string>3BED7FBF1BAE6AC900C03E1E</string>
+				<string>3BED7FC11BAE6AC900C03E1E</string>
+				<string>3BED7FB21BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ToDoList</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB21BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FB31BAE6AC900C03E1E</string>
+				<string>3BED7FB41BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB31BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB41BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB51BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FB41BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FB61BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB71BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FB81BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FB71BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FBC1BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FBD1BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FBD1BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FBE1BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FBC1BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FBF1BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FC01BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FBF1BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FC11BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FC21BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FC21BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FC31BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FC11BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FC41BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FCF1BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FC51BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FC61BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FC71BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3BED7FD51BAE6AC900C03E1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3BED7FC41BAE6AC900C03E1E</string>
+				<string>3BED7FC51BAE6AC900C03E1E</string>
+				<string>3BED7FC61BAE6AC900C03E1E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3BED7FCA1BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ToDoListTests</string>
+			<key>productName</key>
+			<string>ToDoListTests</string>
+			<key>productReference</key>
+			<string>3BED7FC81BAE6AC900C03E1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>3BED7FC81BAE6AC900C03E1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ToDoListTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3BED7FC91BAE6AC900C03E1E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3BED7FA71BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3BED7FAE1BAE6AC900C03E1E</string>
+			<key>remoteInfo</key>
+			<string>ToDoList</string>
+		</dict>
+		<key>3BED7FCA1BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3BED7FAE1BAE6AC900C03E1E</string>
+			<key>targetProxy</key>
+			<string>3BED7FC91BAE6AC900C03E1E</string>
+		</dict>
+		<key>3BED7FCB1BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FCE1BAE6AC900C03E1E</string>
+				<string>3BED7FCC1BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ToDoListTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FCC1BAE6AC900C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FCD1BAE6AC900C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FCD1BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FCE1BAE6AC900C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToDoListTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FCF1BAE6AC900C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FCE1BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FD01BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3BED7FD11BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3BED7FD21BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3BED7FD31BAE6AC900C03E1E</string>
+				<string>3BED7FD41BAE6AC900C03E1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3BED7FD31BAE6AC900C03E1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1F99FBEAA9548EED38E4A250</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>ToDoList/ToDoList.entitlements</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3BED7FD41BAE6AC900C03E1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>77165DF35ABD8C69381E39FD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>ToDoList/ToDoList.entitlements</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3BED7FD51BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3BED7FD61BAE6AC900C03E1E</string>
+				<string>3BED7FD71BAE6AC900C03E1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3BED7FD61BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoListTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3BED7FD71BAE6AC900C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoListTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3BED7FD81BAE6AD500C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B60D5861BB0141A00614805</string>
+				<string>3BED7FE21BAE6AD700C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FD91BAE6AD500C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>495E82B1BD0EDCF12327C782</string>
+				<string>BD48CEE1C7AFE335DEC713FE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FDA1BAE6AD500C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FE81BAE6ADC00C03E1E</string>
+				<string>3BED7FE41BAE6AD700C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FDB1BAE6AD500C03E1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3BED7FF91BAE6ADD00C03E1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7C460959A5960DEE58EA9673</string>
+				<string>3BED7FD81BAE6AD500C03E1E</string>
+				<string>3BED7FD91BAE6AD500C03E1E</string>
+				<string>3BED7FDA1BAE6AD500C03E1E</string>
+				<string>12D98249AFD6B375CFC6FD58</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3BED7FEA1BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ToDoList WatchKit Extension</string>
+			<key>productName</key>
+			<string>ToDoList WatchKit Extension</string>
+			<key>productReference</key>
+			<string>3BED7FDC1BAE6AD500C03E1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.watchkit-extension</string>
+		</dict>
+		<key>3BED7FDC1BAE6AD500C03E1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.app-extension</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ToDoList WatchKit Extension.appex</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3BED7FDD1BAE6AD500C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BA2BBFA1BB19D4A00E340B5</string>
+				<string>3B60D5831BB0133400614805</string>
+				<string>3B60D5821BB0132700614805</string>
+				<string>3BED7FE31BAE6AD700C03E1E</string>
+				<string>3BED7FDE1BAE6AD600C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ToDoList WatchKit Extension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FDE1BAE6AD600C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FDF1BAE6AD600C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FDF1BAE6AD600C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FE01BAE6AD600C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>InterfaceController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FE11BAE6AD700C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>InterfaceController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FE21BAE6AD700C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FE11BAE6AD700C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FE31BAE6AD700C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FE41BAE6AD700C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FE31BAE6AD700C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FE51BAE6ADC00C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FF01BAE6ADC00C03E1E</string>
+				<string>3BED7FF21BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FE61BAE6ADC00C03E1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3BED7FF61BAE6ADD00C03E1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3BED7FE51BAE6ADC00C03E1E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ToDoList WatchKit App</string>
+			<key>productName</key>
+			<string>ToDoList WatchKit App</string>
+			<key>productReference</key>
+			<string>3BED7FE71BAE6ADC00C03E1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application.watchapp</string>
+		</dict>
+		<key>3BED7FE71BAE6ADC00C03E1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ToDoList WatchKit App.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3BED7FE81BAE6ADC00C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FE71BAE6ADC00C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FE91BAE6ADC00C03E1E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3BED7FA71BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3BED7FE61BAE6ADC00C03E1E</string>
+			<key>remoteInfo</key>
+			<string>ToDoList WatchKit App</string>
+		</dict>
+		<key>3BED7FEA1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3BED7FE61BAE6ADC00C03E1E</string>
+			<key>targetProxy</key>
+			<string>3BED7FE91BAE6ADC00C03E1E</string>
+		</dict>
+		<key>3BED7FEB1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FEE1BAE6ADC00C03E1E</string>
+				<string>3BED7FF11BAE6ADC00C03E1E</string>
+				<string>3BED7FEC1BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ToDoList WatchKit App</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FEC1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FED1BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FED1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FEE1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FEF1BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Interface.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FEF1BAE6ADC00C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Interface.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FF01BAE6ADC00C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FEE1BAE6ADC00C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FF11BAE6ADC00C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FF21BAE6ADC00C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FF11BAE6ADC00C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED7FF31BAE6ADC00C03E1E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3BED7FA71BAE6AC900C03E1E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3BED7FDB1BAE6AD500C03E1E</string>
+			<key>remoteInfo</key>
+			<string>ToDoList WatchKit Extension</string>
+		</dict>
+		<key>3BED7FF41BAE6ADC00C03E1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3BED7FDB1BAE6AD500C03E1E</string>
+			<key>targetProxy</key>
+			<string>3BED7FF31BAE6ADC00C03E1E</string>
+		</dict>
+		<key>3BED7FF51BAE6ADC00C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FDC1BAE6AD500C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3BED7FF61BAE6ADD00C03E1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3BED7FF71BAE6ADD00C03E1E</string>
+				<string>3BED7FF81BAE6ADD00C03E1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3BED7FF71BAE6ADD00C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>IBSC_MODULE</key>
+				<string>ToDoList_WatchKit_Extension</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList WatchKit App/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.2</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>4</string>
+				<key>TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]</key>
+				<string>1,4</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3BED7FF81BAE6ADD00C03E1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>IBSC_MODULE</key>
+				<string>ToDoList_WatchKit_Extension</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList WatchKit App/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.2</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>4</string>
+				<key>TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]</key>
+				<string>1,4</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3BED7FF91BAE6ADD00C03E1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3BED7FFA1BAE6ADD00C03E1E</string>
+				<string>3BED7FFB1BAE6ADD00C03E1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3BED7FFA1BAE6ADD00C03E1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EDA2C18127C163DD7802E12D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>ToDoList WatchKit Extension/ToDoList WatchKit Extension.entitlements</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList WatchKit Extension/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>${TARGET_NAME}</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3BED7FFB1BAE6ADD00C03E1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E1EE83999705068222389289</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>ToDoList WatchKit Extension/ToDoList WatchKit Extension.entitlements</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ToDoList WatchKit Extension/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>${TARGET_NAME}</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3BED7FFC1BAE6ADD00C03E1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>13</string>
+			<key>files</key>
+			<array>
+				<string>3BED7FF51BAE6ADC00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Embed App Extensions</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3BED7FFD1BAE6F8E00C03E1E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToDoListTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FFE1BAE6F8E00C03E1E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToDoListTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED7FFF1BAE6F8E00C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED7FFE1BAE6F8E00C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BED80001BAEA5E700C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED7FFD1BAE6F8E00C03E1E</string>
+				<string>3BED7FFE1BAE6F8E00C03E1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ControllerClasses</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED80011BAEA60C00C03E1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BED80021BAEA66500C03E1E</string>
+				<string>3BED80031BAEA66500C03E1E</string>
+				<string>3B60D5871BB02F7400614805</string>
+				<string>3B60D5881BB02F7400614805</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ModelClasses</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED80021BAEA66500C03E1E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ToDoListTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED80031BAEA66500C03E1E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ToDoListTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BED80041BAEA66500C03E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BED80031BAEA66500C03E1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>443C13B511E11D943C1971AA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ToDoList.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>495E82B1BD0EDCF12327C782</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BBE29DAE96F085D5D3D5ED72</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>536F1D54B88B31A32CBB7B3F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>77165DF35ABD8C69381E39FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ToDoList.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C460959A5960DEE58EA9673</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7F570432637A66035D1CD684</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>886EFD753F18083ED063B542</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96E16CBA0D5B6CABE22E6888</key>
+		<dict>
+			<key>fileRef</key>
+			<string>443C13B511E11D943C1971AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AF7CA462EE8DC5AD749303D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BA7E88E805F6C415D063555D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BA7E88E805F6C415D063555D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BBE29DAE96F085D5D3D5ED72</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ToDoList WatchKit Extension.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BD48CEE1C7AFE335DEC713FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BA7E88E805F6C415D063555D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E1EE83999705068222389289</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ToDoList WatchKit Extension.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDA2C18127C163DD7802E12D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ToDoList WatchKit Extension.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ToDoList WatchKit Extension/Pods-ToDoList WatchKit Extension.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>3BED7FA71BAE6AC900C03E1E</string>
+</dict>
+</plist>
