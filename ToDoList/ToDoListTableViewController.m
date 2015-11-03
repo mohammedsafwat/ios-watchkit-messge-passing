@@ -14,6 +14,7 @@
 #define TABLE_VIEW_CELL_HEIGHT 40
 
 @interface ToDoListTableViewController ()
+@property (nonatomic, strong) NSMutableArray *toDoListItems;
 @property (nonatomic, strong) UITextField *toDoInputTextField;
 @property (nonatomic, strong) MMWormhole *wormhole;
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
@@ -30,6 +31,7 @@
 }
 
 - (void)initializeValues {
+    self.toDoListItems = [ToDoListData toDoListItems];
     self.tableView.tableHeaderView = [self toDoListTableViewHeader];
     self.toDoInputTextField.delegate = self;
     self.wormhole = [[MMWormhole alloc] initWithApplicationGroupIdentifier:@"group.com.safwat.development.ToDoList" optionalDirectory:@"wormhole"];
@@ -56,7 +58,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if(![self textIsEmpty:textField.text]) {
-        [[ToDoListData toDoListItems] addObject:textField.text];
+        [self.toDoListItems addObject:textField.text];
         [textField setText:@""];
         [self.tableView reloadData];
         //[self passWormholeMessage:[ToDoListData toDoListItems]];
@@ -84,13 +86,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [ToDoListData toDoListItems].count;
+    return self.toDoListItems.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ToDoListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToDoListTableViewCell" forIndexPath:indexPath];
-    cell.toDoItemTitle.text = [ToDoListData toDoListItems][indexPath.row];
+    cell.toDoItemTitle.text = self.toDoListItems[indexPath.row];
     return cell;
 }
 
@@ -103,7 +105,7 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [[ToDoListData toDoListItems] removeObjectAtIndex:indexPath.row];
+        [self.toDoListItems removeObjectAtIndex:indexPath.row];
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         //[self passWormholeMessage:[ToDoListData toDoListItems]];
